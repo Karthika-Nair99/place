@@ -10,21 +10,35 @@
     {
      "id": 2,
       "name": "Chennai",
-      "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200",
+      "picture":"https://tse1.mm.bing.net/th?id=OIP.wSGhU6qIkRAO2fffV7flLAHaEK&pid=Api&P=0&w=280&h=158",
       "location":"India"
 
     },
     {
      "id": 3,
       "name": "Goa",
-      "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200",
+      "picture":"https://tse2.mm.bing.net/th?id=OIP.dUsHzTIOrjLmNjxNDB8N4gHaFj&pid=Api&P=0&w=207&h=156",
       "location":"India"
 
     },
     {
      "id": 4,
       "name": "Munnar",
-      "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200",
+      "picture":"http://traveltriangle.com/blog/wp-content/uploads/2014/11/tea-gardens-in-munnar-og.jpg",
+      "location":"India"
+
+    },
+    {
+     "id": 5,
+      "name": "Jaipur",
+      "picture":"https://www.traveldailymedia.com/assets/2019/07/jaipur.jpg",
+      "location":"India"
+
+    },
+    {
+     "id": 6,
+      "name": "Banglore",
+      "picture":"https://tse1.mm.bing.net/th?id=OIP.j2DhlLw0Nr0VBRzGQMS6KwHaEK&pid=Api&P=0&w=281&h=159",
       "location":"India"
 
     }
