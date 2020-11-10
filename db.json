@@ -1,9 +1,12 @@
 {
   "posts": [
-    {
+        {
       "id": 1,
-      "title": "Post 1"
+      "name": "Mumbai",
+      "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200",
+      "location":"India"
     },
+
     {
       "id": 2,
       "title": "Post 2"
