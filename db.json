@@ -1,0 +1,43 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "name": "Mumbai"
+      "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200"
+      location:"India"
+    }
+    {
+      "id": 2,
+      "name": "Chennai"
+      "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200"
+      location:"India"
+    }
+    {
+      "id": 3,
+      "name": "Jaipur"
+      "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200"
+      location:"India"
+    }
+    {
+      "id": 4,
+      "name": "Munnar"
+      "picture":"https://www.fluencecorp.com/wp-content/uploads/2019/07/desalination-in-chennai.jpg"
+      location:"India"
+    }
+    {
+      "id": 5,
+      "name": "Chennai"
+      "picture":"https://www.fluencecorp.com/wp-content/uploads/2019/07/desalination-in-chennai.jpg"
+      location:"India"
+    }
+    {
+      "id": 6,
+      "name": "Goa"
+      "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200"
+      location:"India"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
