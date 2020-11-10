@@ -4,43 +4,144 @@
       "id": 1,
       "name": "Mumbai",
       "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200",
-      "location":"India"
+      "location":"Maharashta,India"
     },
 
     {
      "id": 2,
       "name": "Chennai",
       "picture":"https://tse1.mm.bing.net/th?id=OIP.wSGhU6qIkRAO2fffV7flLAHaEK&pid=Api&P=0&w=280&h=158",
-      "location":"India"
+      "location":"Tamilnadu,India"
 
     },
     {
      "id": 3,
       "name": "Goa",
       "picture":"https://tse2.mm.bing.net/th?id=OIP.dUsHzTIOrjLmNjxNDB8N4gHaFj&pid=Api&P=0&w=207&h=156",
-      "location":"India"
+      "location":"Goa,India"
 
     },
     {
      "id": 4,
       "name": "Munnar",
       "picture":"http://traveltriangle.com/blog/wp-content/uploads/2014/11/tea-gardens-in-munnar-og.jpg",
-      "location":"India"
+      "location":"Kerala,India"
 
     },
     {
      "id": 5,
       "name": "Jaipur",
       "picture":"https://www.traveldailymedia.com/assets/2019/07/jaipur.jpg",
-      "location":"India"
+      "location":"Rajasthan,India"
 
     },
     {
      "id": 6,
       "name": "Banglore",
       "picture":"https://tse1.mm.bing.net/th?id=OIP.j2DhlLw0Nr0VBRzGQMS6KwHaEK&pid=Api&P=0&w=281&h=159",
+      "location":"Karnataka,India"
+
+    },
+    {
+     "id": 7,
+      "name": "Darjeeling",
+      "picture":"https://mastholiday.files.wordpress.com/2014/01/darjeeling.jpg",
+      "location":"West Bengal,India"
+
+    },
+    {
+     "id": 8,
+      "name": "Leh Ladakh",
+      "picture":"https://www.theindianwire.com/wp-content/uploads/2018/06/ladakh.jpg",
       "location":"India"
 
-    }
+    },
+    {
+     "id": 9,
+      "name": "Agra",
+      "picture":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Taj_Mahal%2C_Agra%2C_India_edit2.jpg/1200px-Taj_Mahal%2C_Agra%2C_India_edit2.jpg",
+      "location":"Uttar Pradesh,India"
+
+    },
+    {
+     "id": 10,
+      "name": "Dalhousie",
+      "picture":"https://www.holidify.com/images/bgImages/DALHOUSIE.jpg",
+      "location":"Himachal Pradesh,India"
+
+    },
+    {
+     "id": 11,
+      "name": "Andaman and Nicobar",
+      "picture":"http://shyamjitours.in/blog/wp-content/uploads/2018/03/explore_andaman.jpg",
+      "location":"India"
+
+    },
+    {
+     "id": 12,
+      "name": "Coorg",
+      "picture":"https://images.thrillophilia.com/image/upload/s--lq17fkU8--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_975/v1/images/photos/000/138/325/original/1559891641_shutterstock_152941832.jpg.jpg?1559891641",
+      "location":"Karnataka,India"
+
+    },
+    {
+     "id": 13,
+      "name": "Manali",
+      "picture":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Manali_Mountains.jpg/1200px-Manali_Mountains.jpg",
+      "location":"Himachal Pradesh,India"
+
+    },
+    {
+     "id": 14,
+      "name": "Ooty",
+      "picture":"https://bharatstories.in/wp-content/uploads/2019/10/Ooty-Lake.jpg",
+      "location":"Tamilnadu,India"
+
+    },
+    {
+     "id": 15,
+      "name": "Udaipur",
+      "picture":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Udaipur_City_Palace.jpg/1200px-Udaipur_City_Palace.jpg",
+      "location":"Rajasthan,India"
+
+    },
+    {
+     "id": 16,
+      "name": "Varanasi",
+      "picture":"https://tse2.mm.bing.net/th?id=OIP.IrqJnrhT3ciMp7HANscb9gHaE7&pid=Api&P=0&w=239&h=159",
+      "location":"Uttar Pradesh,India"
+
+    },
+    {
+     "id": 17,
+      "name": "New Delhi",
+      "picture":"http://3.bp.blogspot.com/-1Z_3sRgUA-U/UWbFSkR_GuI/AAAAAAAAYdM/pxOsUyNpk1Y/s1600/Delhi+stoke.jpg",
+      "location":"India"
+
+    },
+    {
+     "id": 18,
+      "name": "Shimla",
+      "picture":"https://blog.railyatri.in/wp-content/uploads/2018/12/Shimla-Winters.png",
+      "location":"Himachal Pradesh,India"
+
+    },
+    {
+     "id": 19,
+      "name": "Amritsar",
+      "picture":"https://cdn.britannica.com/13/173813-050-1DCA15F5/Harmandir-Sahib-Amritsar-India-Punjab.jpg",
+      "location":"Shimla,India"
+
+    },
+    {
+     "id": 20,
+      "name": "Gangtok",
+      "picture":"https://femina.wwmindia.com/content/2017/Jul/gangtok_sikkim_1499159505.jpg",
+      "location":"Sikkim,India"
+
+    },
+    
+    
+    
   ]
 }
