@@ -8,12 +8,27 @@
     },
 
     {
-      "id": 2,
-      "title": "Post 2"
+     "id": 2,
+      "name": "Chennai",
+      "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200",
+      "location":"India"
+
     },
     {
-      "id": 3,
-      "title": "Post 3"
+     "id": 3,
+      "name": "Goa",
+      "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200",
+      "location":"India"
+
+    },
+    {
+      
+     "id": 4,
+      "name": "Munnar",
+      "picture":"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg?imwidth=1200",
+      "location":"India"
+
+    },
     }
   ]
 }
