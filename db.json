@@ -349,7 +349,44 @@
       "picture":"https://www.holidify.com/images/compressed/dest_wiki_6703.jpg",
       "location":"Himachal Pradesh,India"
 
+    },
+    {
+     "id":51,
+      "name": "Haridwar",
+      "picture":"https://www.holidify.com/images/bgImages/HARIDWAR.jpg",
+      "location":"Uttarakhand,India"
+
+    },
+{
+     "id":52,
+      "name": "Gokarna",
+      "picture":"https://www.holidify.com/images/cmsuploads/compressed/28994844147_cca08962f4_z_20190313112332.jpg",
+      "location":"Karnataka,India"
+
+    },
+    {
+     "id":53,
+      "name": "Kaziranga National Park",
+      "picture":"https://www.holidify.com/images/cmsuploads/compressed/acj-1910-kaziranga-national-park-5_20190619174032.jpg",
+      "location":"Assam,India"
+
+    },
+{
+     "id":54,
+      "name": "Rishikesh",
+      "picture":"https://www.holidify.com/images/bgImages/RISHIKESH.jpg",
+      "location":" Uttarakhand,India"
+
+    },
+{
+     "id":55,
+      "name": "Kanyakumari",
+      "picture":"https://www.holidify.com/images/bgImages/KANYAKUMARI.jpg",
+      "location":" Tamil Nadu,India"
+
     }
+
+
 
     
     
