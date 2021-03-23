@@ -1,0 +1,209 @@
+import requests
+from bs4 import BeautifulSoup 
+import webbrowser   
+import datetime
+from flask import Flask, jsonify, request
+import json
+
+response = ''
+app = Flask(__name__)
+
+
+@app.route('/name', methods = ['GET', 'POST'])
+def nameRoute():
+
+    #fetching the global response variable to manipulate inside the function
+    global response
+
+    #checking the request type we get from the app
+    if(request.method == 'POST'):
+        request_data = request.data #getting the response data
+        request_data = json.loads(request_data.decode('utf-8')) #converting it from json to key value pair
+        name = request_data['name'] #assigning it to name
+        response = Take_query() #re-assigning response with the name we got from the user
+        return " " #to avoid a type error 
+    else:
+        return jsonify({'name' : response}) #sending data back to your frontend app
+def query():
+
+    #fetching the global response variable to manipulate inside the function
+    global response
+
+    #checking the request type we get from the app
+    if(request.method == 'POST'):
+        request_data = request.data #getting the response data
+        request_data = json.loads(request_data.decode('utf-8')) #converting it from json to key value pair
+        name = request_data['name']
+        return name
+def Take_query(): 
+    
+  
+    # calling the Hello function for  
+    # making it more interactive 
+    
+      
+    # This loop is infinite as it will take 
+    # our queries continuously until and unless 
+    # we do not say bye to exit or terminate  
+    # the program 
+    while(True): 
+          
+        # taking the query and making it into 
+        # lower case so that most of the times  
+        # query matches and we get the perfect  
+        # output 
+        query = takeCommand() 
+        if "hello" in query: 
+            return("hey") 
+              
+            # in the open method we just to give the link 
+            # of the website and it automatically open  
+            # it in your default browser 
+             
+            continue
+          
+        
+              
+        elif "which day it is" in query: 
+            return tellDay() 
+            continue
+          
+        elif "time" in query: 
+            return tellTime() 
+            continue
+        
+          
+        # this will exit and terminate the program 
+        elif "bye" in query: 
+            return("Bye.") 
+            break
+          
+        
+          
+        elif "tell me your name" in query: 
+            return("I am ASK. Your Travel Guide") 
+        
+        else:
+            return (web_scraping(query))
+            query = None
+
+
+def takeCommand():
+    Query = query()
+   
+    return(Query)
+def tellDay(): 
+      
+    # This function is for telling the 
+    # day of the week 
+    day = datetime.datetime.today().weekday() + 1
+      
+    #this line tells us about the number  
+    # that will help us in telling the day 
+    Day_dict = {1: 'Monday', 2: 'Tuesday',  
+                3: 'Wednesday', 4: 'Thursday',  
+                5: 'Friday', 6: 'Saturday', 
+                7: 'Sunday'} 
+      
+    if day in Day_dict.keys(): 
+        day_of_the_week = Day_dict[day] 
+        return(day_of_the_week) 
+        #print("The day is " + day_of_the_week) 
+def tellTime(): 
+      
+    # This method will give the time 
+    time = str(datetime.datetime.now()) 
+      
+    # the time will be displayed like  
+    # this "2020-06-05 17:50:14.582630" 
+    #nd then after slicing we can get time 
+    return(time) 
+    hour = time[11:13] 
+    min = time[14:16] 
+    #print("The time is sir" + hour + "Hours and" + min + "Minutes")  
+def web_scraping(qs):
+    global flag2
+    global loading
+
+    URL = 'https://www.google.com/search?q=' + qs
+    page = requests.get(URL)
+
+    soup = BeautifulSoup(page.content, 'html.parser')
+    
+    links = soup.findAll("a")
+    all_links = []
+    for link in links:
+        link_href = link.get('href')
+        if "url?q=" in link_href and not "webcache" in link_href:
+            all_links.append((link.get('href').split("?q=")[1].split("&sa=U")[0]))
+    
+          
+
+    flag= False
+    for link in all_links:
+        if 'https://en.wikipedia.org/wiki/' in link:
+            wiki = link
+            flag = True
+            break
+    
+    flag1= False
+    for link in all_links:
+        if 'http://distancebetween2.com/' in link:
+            dist = link
+            flag1 = True
+            break
+            
+
+    div0 = soup.find_all('div',class_="kvKEAb")
+    div1 = soup.find_all("div", class_="Ap5OSd")
+    div2 = soup.find_all("div", class_="nGphre")
+    div3  = soup.find_all("div", class_="BNeawe iBp4i AP7Wnd")
+    
+    if len(div0)!=0:
+        answer = div0[0].text
+        return(answer)
+    elif len(div1) != 0:
+        answer = div1[0].text+"\n"+div1[0].find_next_sibling("div").text
+        return(answer)
+    elif len(div2) != 0:
+        answer = div2[0].find_next("span").text+"\n"+div2[0].find_next("div",class_="kCrYT").text
+        return(answer)
+    elif len(div3)!=0:
+        answer = div3[1].text
+        return(answer)
+    
+    elif flag==True:
+        page2 = requests.get(wiki)
+        soup = BeautifulSoup(page2.text, 'html.parser')
+        
+       
+        paragraphs = soup.select("p")
+        
+                   
+        for para in paragraphs:
+            if bool(para.text.strip()):
+                answer =para.text
+                return(answer)
+                break
+   
+    elif flag1==True:
+        page2 = requests.get(dist)
+        soup = BeautifulSoup(page2.text, 'html.parser')
+        
+       
+        paragraphs = soup.select("strong")
+        for para in paragraphs:
+            if bool(para.text.strip()):
+                answer =para.text
+                return(answer)
+                break
+    else:
+        answer = "Sorry. I could not find the desired results"
+        return(answer)
+
+            
+
+
+
+if __name__ == "__main__":
+    app.run()
